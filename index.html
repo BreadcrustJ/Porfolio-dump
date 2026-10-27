@@ -1,6 +1,9 @@
 
 
 
+Copy the full code below into your HTML file:
+
+```html
 <!doctype html>
 <html lang="en">
 <head>
@@ -16,7 +19,7 @@
     .hero{position:relative;display:flex;align-items:center;min-height:510px;padding:72px 10%;overflow:hidden;background:radial-gradient(ellipse at 82% 44%,#6483ff26,transparent 38%),linear-gradient(135deg,#0b1020,#101a30)}
     .hero-copy{position:relative;z-index:1;max-width:680px}.eyebrow,.label{color:var(--mint);font-size:.75rem;font-weight:700;letter-spacing:.16em}.hero h1,h2,h3{line-height:1.15}.hero h1{margin:16px 0;font-size:clamp(3.3rem,8vw,6rem);letter-spacing:-.05em}.intro{max-width:500px;color:var(--muted);font-size:1.15rem}.button{display:inline-block;margin-top:16px;padding:10px 17px;border-radius:8px;background:var(--mint);color:#0b1020;font-weight:700}.hero-art{position:absolute;right:12%;display:grid;width:270px;height:270px;place-items:center;border:1px solid #91aaff55;border-radius:50%;color:var(--mint);font-size:3rem;font-weight:800}.hero-art:before{content:"";position:absolute;width:145px;height:145px;border:1px solid #ffffff55;border-radius:35px;background:linear-gradient(145deg,#8cf0d233,#91aaff25);transform:rotate(-8deg)}.hero-art span{z-index:1}.caption{position:absolute;bottom:22px;left:10%;color:#78859e;font-size:.7rem;letter-spacing:.18em}
     .wrap{padding:82px 10%;border-bottom:1px solid var(--line)}.about{display:grid;grid-template-columns:.65fr 1.8fr;gap:55px}.about h2,.heading h2{margin:0 0 22px;font-size:clamp(2rem,4vw,3.2rem);letter-spacing:-.04em}.copy p,.ack p,.heading p,.card p{color:var(--muted)}.copy p{margin:0 0 16px}.heading{display:flex;justify-content:space-between;align-items:end;gap:20px;margin:20px 0 28px}.heading h2{margin:0}.heading p{margin:0}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.card{display:flex;min-height:210px;flex-direction:column;padding:22px;border:1px solid var(--line);border-radius:14px;background:var(--panel);scroll-margin-top:90px;transition:transform .18s,border-color .18s}.card:hover{transform:translateY(-4px);border-color:#8cf0d299}.num{color:var(--mint);font-size:.8rem;font-weight:700}.card h3{margin:18px 0 6px}.card p{margin:0 0 16px;font-size:.94rem}.note{margin-top:auto;color:var(--blue);font-size:.78rem}.featured{background:linear-gradient(145deg,#8cf0d21a,transparent 70%),var(--panel)}.ack{display:grid;grid-template-columns:.8fr 1.2fr;gap:45px}.ack h2{margin:10px 0 0}.ack p{margin:0}.footer{display:flex;justify-content:space-between;padding:22px 10%;color:var(--muted);font-size:.85rem}.footer a{color:var(--mint)}
-    .work-section{scroll-margin-top:85px}.work-section h2{margin:12px 0 8px;font-size:clamp(2rem,4vw,3rem);letter-spacing:-.04em}.work-section p{min-height:70px;margin:0;color:var(--muted)}
+    .work-section{scroll-margin-top:85px}.work-section h2{margin:12px 0 18px;font-size:clamp(2rem,4vw,3rem);letter-spacing:-.04em}.scroll-box{max-height:260px;min-height:150px;overflow-y:auto;padding:18px 20px;border:1px solid var(--line);border-radius:12px;background:var(--panel);scrollbar-color:var(--blue) var(--bg);scrollbar-width:thin}.scroll-box:focus{outline:2px solid var(--mint);outline-offset:3px}.scroll-box p{margin:0 0 14px;color:var(--muted)}.scroll-box p:last-child{margin-bottom:0}.ack-copy{min-width:0}.ack-copy .scroll-box{max-height:240px}
     @media(max-width:800px){.top{align-items:flex-start;flex-direction:column}.hero-art{right:-90px;opacity:.3}.about,.ack{grid-template-columns:1fr;gap:22px}.grid{grid-template-columns:repeat(2,1fr)}}
     @media(max-width:540px){.top{padding:14px 6%}nav a{padding:5px 7px;font-size:.77rem}.hero{min-height:470px;padding:65px 7% 80px}.hero h1{font-size:3.4rem}.caption{left:7%;font-size:.58rem}.wrap{padding:62px 7%}.heading{align-items:flex-start;flex-direction:column;gap:4px}.grid{grid-template-columns:1fr}.footer{padding:20px 7%}}
     @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
@@ -104,31 +107,41 @@
     <section class="wrap work-section" id="work-history">
       <div class="label">COURSE WORK</div>
       <h2>History of AI</h2>
-      <p>Insert work here.</p>
+      <div class="scroll-box" tabindex="0" aria-label="Work content: History of AI">
+        <p>Insert work here.</p>
+      </div>
     </section>
 
     <section class="wrap work-section" id="work-ethics">
       <div class="label">COURSE WORK</div>
       <h2>AI &amp; Ethics</h2>
-      <p>Insert work here.</p>
+      <div class="scroll-box" tabindex="0" aria-label="Work content: AI &amp; Ethics">
+        <p>Insert work here.</p>
+      </div>
     </section>
 
     <section class="wrap work-section" id="work-techniques">
       <div class="label">COURSE WORK</div>
       <h2>AI Techniques</h2>
-      <p>Insert work here.</p>
+      <div class="scroll-box" tabindex="0" aria-label="Work content: AI Techniques">
+        <p>Insert work here.</p>
+      </div>
     </section>
 
     <section class="wrap work-section" id="work-machine-learning">
       <div class="label">COURSE WORK</div>
       <h2>Machine Learning</h2>
-      <p>Insert work here.</p>
+      <div class="scroll-box" tabindex="0" aria-label="Work content: Machine Learning">
+        <p>Insert work here.</p>
+      </div>
     </section>
 
     <section class="wrap work-section" id="work-generative-ai">
       <div class="label">COURSE WORK</div>
       <h2>Generative AI</h2>
-      <p>Insert work here.</p>
+      <div class="scroll-box" tabindex="0" aria-label="Work content: Generative AI">
+        <p>Insert work here.</p>
+      </div>
     </section>
 
     <section class="wrap ack">
@@ -136,9 +149,14 @@
         <div class="label">CREDITS</div>
         <h2>AI acknowledgement</h2>
       </div>
-      <p>Microsoft Copilot helped generate the initial HTML layout and provided assistance with the CSS layout and navigation. I wrote the portfolio's personal content and course responses. 10/13/2026: "Polish my html code" Open ai (2026) ChatGPT (2026) https://chatgpt.com/</p>      
-      <p>10/27/2026:" analyze the code in prep of my next request" and "replace each "evidence coming soon" to "view my work" and when clicked navigates down to a whole section in the website where i can insert text</p>
-      <p>each one should have a title according to each section. meaning when clicking the view my work on machine learning it should navigate down to a seciton titeld "machine learning". leave the place thats supposed to be filled with content blank for now, or a "insert work here" Open ai (2026) ChatGPT (2026) https://chatgpt.com/</p>
+      <div class="ack-copy">
+        <div class="scroll-box" tabindex="0" aria-label="AI acknowledgement text">
+          <p>Microsoft Copilot helped generate the initial HTML layout and provided assistance with the CSS layout and navigation. I wrote the portfolio's personal content and course responses. 10/13/2026: "Polish my html code" Open ai (2026) ChatGPT (2026) https://chatgpt.com/</p>
+          <p>10/27/2026: Prompt:"analyze the code in prep of my next request" and "replace each "evidence coming soon" to "view my work" and when clicked navigates down to a whole section in the website where i can insert text</p>
+          <p>"each one should have a title according to each section. meaning when clicking the view my work on machine learning it should navigate down to a seciton titeld "machine learning". leave the place thats supposed to be filled with content blank for now, or a "insert work here" </p>
+          <p>"for the sections you get to by navigating by clikcing "view my work" as well as the text inside the ai acknowledgement, make it so its isolated in a box and you can scroll inside the box to view the rest of the work without it actually taking up space in the website" Open ai (2026) ChatGPT (2026) https://chatgpt.com/</p>
+        </div>
+      </div>
     </section>
   </main>
 
@@ -148,6 +166,7 @@
   </footer>
 </body>
 </html>
+```
 
 
 
